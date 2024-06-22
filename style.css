@@ -1,0 +1,646 @@
+@media screen and (max-width: 767px) {
+  html {
+    width: 100%;
+    min-width: initial;
+  }
+
+  .ipsLayout_container {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  header .ipsLayout_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ipsLayout_header {
+    max-width: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  #elUserNav {
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  html[dir="ltr"] #elUserNav {
+    right: 16px;
+    position: initial;
+    padding-bottom: 16px;
+  }
+
+  html[dir="ltr"] #elUserNav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  html[dir="ltr"] #elUserNav li {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+
+  #elSearch {
+    width: 100%;
+  }
+
+  .ipsNavBar_primary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+
+  header .ipsLayout_container img {
+    max-height: 32px;
+  }
+
+  #ipsLayout_mainArea {
+    display: flex;
+    flex-direction: column;
+    min-height: initial;
+  }
+
+  #ipsLayout_contentArea {
+    display: flex;
+  }
+
+  #ipsLayout_contentWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  h1 .ipsItemStatus,
+  h2 .ipsItemStatus,
+  h3 .ipsItemStatus,
+  h4 .ipsItemStatus,
+  h5 .ipsItemStatus {
+    display: none;
+  }
+
+  .ipsWidget_horizontal .mainBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .ipsGrid_span5.mainvideoP {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsWidget_horizontal .mainBlock div {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .ipsWidget_horizontal .mainBlock div.mainvideo div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .ipsWidget_horizontal .mainBlock div.mainvideo div p {
+    margin: 0 !important;
+    width: auto;
+  }
+
+  .ipsWidget_horizontal .mainBlock div.mainvideo div p a {
+    display: flex;
+    width: max-content;
+  }
+
+  .ipsWidget_horizontal .mainBlock div .titlewolfa2 {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .ipsWidget_horizontal .mainBlock div ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsWidget_horizontal .mainBlock div ul li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ipsWidget_horizontal .mainBlock div img {
+    width: 100% !important;
+  }
+
+  .sectionArticles article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionArticles article header h2 {
+    font-size: 16px;
+  }
+
+  .sectionArticles article header a {
+    margin: 0 !important;
+  }
+
+  .sectionArticles article img {
+    width: 100%;
+    max-width: 100% !important;
+    max-height: initial !important;
+  }
+
+  .sectionArticles article .ipsColumns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sectionArticles article .ipsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .sectionArticles article .cCmsRecord_image {
+    display: block;
+    width: 100%;
+  }
+
+  .sectionArticles article .cCmsRecord_image a {
+    display: block;
+    width: 100%;
+  }
+
+  #ipsLayout_sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  /* Forum */
+  .popularMods .ipsGrid {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .popularMods .ipsGrid div {
+    width: 200px;
+  }
+
+  .popularMods .ipsGrid div .cCmsRecord_image {
+    background-size: cover !important;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid div {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid div span.topUsers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid
+    div
+    span.topUsers
+    #elTopContributors_content
+    .ipsDataItem {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid
+    div
+    span.topUsers
+    #elTopContributors_content
+    .ipsDataItem
+    .ipsDataItem_icon {
+    width: auto !important;
+    padding-right: 8px;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid
+    div
+    span.topUsers
+    #elTopContributors_content
+    .ipsDataItem
+    br {
+    display: none;
+  }
+
+  .ipsList_reset.cForumList .cForumRow .ipsDataList .cForumRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ipsList_reset.cForumList
+    .cForumRow
+    .ipsDataList
+    .cForumRow
+    .ipsDataItem_icon {
+    min-width: initial;
+    display: flex;
+    padding: 0;
+    width: initial;
+    align-content: center;
+    justify-content: center;
+    padding: 8px;
+    flex-direction: column;
+  }
+
+  .ipsList_reset.cForumList
+    .cForumRow
+    .ipsDataList
+    .cForumRow
+    .ipsDataItem_icon
+    img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ipsList_reset.cForumList
+    .cForumRow
+    .ipsDataList
+    .cForumRow
+    .ipsDataItem_stats,
+  .ipsList_reset.cForumList
+    .cForumRow
+    .ipsDataList
+    .cForumRow
+    .ipsDataItem_lastPoster {
+    display: none;
+  }
+
+  .ipsWidget_horizontal .ipsWidget_stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ipsWidget_horizontal .ipsWidget_stats div {
+    width: 100% !important;
+    float: initial;
+    margin: 0 !important;
+  }
+
+  .ipsWidget_horizontal .ipsWidget_stats div br {
+    display: none;
+  }
+
+  .ipsWidget_horizontal .ipsWidget_stats div:not(.ipsPhotoPanel) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsWidget_horizontal .ipsWidget_stats div.ipsPhotoPanel {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .ipsPageHeader header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ipsPageHeader header .ipsResponsive_noFloat div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ipsResponsive_hidePhone {
+    display: none;
+  }
+
+  .ipsButtonBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsButtonBar .ipsPagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .ipsButtonBar .ipsPagination_pageJump {
+    display: none;
+  }
+
+  .ipsButtonBar .ipsClearfix {
+    display: none;
+  }
+
+  .ipsBox ol.ipsDataList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsBox ol.ipsDataList li {
+    display: flex;
+    padding: 8px;
+    border: none !important;
+    border-bottom: 1px solid #333333 !important;
+  }
+
+  .ipsBox ol.ipsDataList li span.ipsPagination {
+    display: none;
+  }
+
+  .ipsBox ol.ipsDataList li .ipsDataItem_stats {
+    display: none;
+  }
+
+  .ipsBox ol.ipsDataList li .ipsDataItem_lastPoster {
+    display: none;
+  }
+
+  /* Editor */
+  .ipsComposeArea_editor {
+    margin: 0 !important;
+  }
+
+  .ipsComposeArea_editor::before {
+    display: none !important;
+  }
+
+  /* Post */
+
+  article.cPost {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article.cPost .cAuthorPane.cAuthorPane_mobile {
+    display: flex !important;
+    flex-direction: row-reverse;
+    gap: 16px;
+    border-bottom: 1px solid #333333;
+  }
+
+  article.cPost .cAuthorPane.cAuthorPane_mobile h3 {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  article.cPost .cAuthorPane.cAuthorPane_mobile h3 span {
+    display: flex !important;
+    align-items: center;
+  }
+
+  article.cPost .cAuthorPane.cAuthorPane_mobile .cAuthorPane_photo {
+    display: flex !important;
+    position: relative;
+  }
+
+  article.cPost .cAuthorPane.cAuthorPane_mobile .cAuthorPane_photo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  aside.ipsComment_author {
+    width: 100%;
+    display: none;
+  }
+
+  aside.ipsComment_author h3 {
+    margin: 0 !important;
+  }
+
+  aside.ipsComment_author ul {
+    margin: 0 !important;
+  }
+
+  /* Profile */
+
+  div[data-role="profileContent"] div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* iframe */
+
+  iframe {
+    max-width: 100%;
+  }
+
+  /* mod page */
+
+  .modInfoGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .modInfoGrid div {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .followmods {
+    display: flex;
+    gap: 16px;
+  }
+
+  .followmods .ipsButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: inherit !important;
+  }
+
+  .followmods ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 !important;
+  }
+
+  .followmods ul::after {
+    display: none;
+  }
+
+  article.ipsContained .additionalButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  article.ipsContained .additionalButtons div {
+    width: 100% !important;
+  }
+
+  .similarBlocks {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    height: 240px;
+  }
+
+  .similarBlocks .ipsGrid_span3 {
+    min-width: 200px;
+  }
+
+  .similarBlocks .ipsItemControls {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 166px;
+  }
+
+  #elRecordReviewForm .ipsUserPhoto {
+    display: none;
+  }
+
+  #elRecordReviewForm .ipsPhotoPanel div {
+    margin: 0 !important;
+  }
+
+  .cCmsCategoryFeaturedEntry header h1 {
+    font-size: 16px;
+  }
+
+  .cCmsCategoryFeaturedEntry header a {
+    margin: 0 !important;
+  }
+
+  .cCmsCategoryFeaturedEntry .ipsColumns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cCmsCategoryFeaturedEntry .ipsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .cCmsCategoryFeaturedEntry .cCmsRecord_image {
+    display: block;
+    width: 100%;
+  }
+
+  .cCmsCategoryFeaturedEntry .cCmsRecord_image a {
+    display: block;
+    width: 100%;
+  }
+
+  .cCmsCategoryFeaturedEntry .cCmsRecord_image img {
+    display: block;
+    width: 100%;
+  }
+
+  /* Blog */
+
+  .cBlogList .ipsDataItem {
+    padding: 0 !important;
+  }
+
+  .html[dir="ltr"] .cBlogInfo + .ipsColumn {
+    display: none;
+  }
+
+  /* Clubs */
+  .ipsGrid_collapsePhone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ipsGrid_collapsePhone .ipsGrid_span6 {
+    width: 100% !important;
+  }
+
+  /* Leaderboard */
+
+  #elLeaderboardContent ol[data-role="popularContent"] li {
+    display: flex;
+    padding: 8px;
+  }
+
+  #elLeaderboardContent
+    ol[data-role="popularContent"]
+    li
+    .ipsContained_container {
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #elLeaderboardContent ol[data-role="popularContent"] li div {
+    margin: 0 !important;
+  }
+
+  #elLeaderboardContent ol[data-role="popularContent"] li ul {
+    margin: 0 !important;
+  }
+
+  #elLeaderboardContent ol[data-role="popularContent"] li .cPopularItem_stats {
+    width: auto;
+    padding: 8px;
+  }
+
+  #elLeaderboardContent
+    ol[data-role="popularContent"]
+    li
+    .ipsStreamItem_header
+    div {
+    margin: 0 !important;
+  }
+
+  #elLeaderboardContent
+    ol[data-role="popularContent"]
+    li
+    .ipsStreamItem_header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #elLeaderboardContent
+    ol[data-role="popularContent"]
+    li
+    .ipsStreamItem_header
+    > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
