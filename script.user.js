@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Ap-Pro Mobile
 // @description Ap-Pro Mobile Version
-// @version     0.1
+// @version     0.2
 // @author      PSIget
 // @namespace   ap-pro.ru
 // @match       *://ap-pro.ru/*
@@ -38,7 +38,7 @@
     var link = document.createElement("link");
     link.rel = "stylesheet";
     link.type = "text/css";
-    link.href = 'https://raw.githubusercontent.com/PSIget/appro-mobile/main/style.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/PSIget/appro-mobile/style.css';
 
     // Проверяем наличие секции body
     var body = document.body || document.getElementsByTagName("body")[0];
