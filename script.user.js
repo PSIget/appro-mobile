@@ -19,18 +19,31 @@
     return;
   }
 
-  // Создаем новый мета-тег
-  var metaTag = document.createElement("meta");
-  metaTag.name = "viewport";
-  metaTag.content =
+  // Создаем новый мета-тег для viewport
+  var metaViewport = document.createElement("meta");
+  metaViewport.name = "viewport";
+  metaViewport.content =
     "width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=0.86";
 
   // Проверяем, существует ли уже мета-тег viewport
-  var existingMetaTag = document.querySelector('meta[name="viewport"]');
-  if (existingMetaTag) {
-    existingMetaTag.content = metaTag.content;
+  var existingMetaViewport = document.querySelector('meta[name="viewport"]');
+  if (existingMetaViewport) {
+    existingMetaViewport.content = metaViewport.content;
   } else {
-    head.appendChild(metaTag);
+    head.appendChild(metaViewport);
+  }
+
+  // Создаем или обновляем мета-тег для theme-color
+  var metaThemeColor = document.createElement("meta");
+  metaThemeColor.name = "theme-color";
+  metaThemeColor.content = "#171a21";
+
+  // Проверяем, существует ли уже мета-тег theme-color
+  var existingMetaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (existingMetaThemeColor) {
+    existingMetaThemeColor.content = metaThemeColor.content;
+  } else {
+    head.appendChild(metaThemeColor);
   }
 
   // Функция для загрузки CSS после тега body
