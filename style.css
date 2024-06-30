@@ -47,6 +47,10 @@
     width: 100%;
   }
 
+  #elSearchWrapper {
+    top: inherit;
+  }
+
   .ipsNavBar_primary {
     display: flex;
     flex-direction: column;
@@ -56,6 +60,14 @@
 
   header .ipsLayout_container img {
     max-height: 32px;
+  }
+
+  #ipsLayout_header nav.ipsNavBar_noSubBars:after {
+    display: none;
+  }
+
+  .ipsClearfix:after {
+    display: none;
   }
 
   #ipsLayout_mainArea {
@@ -81,12 +93,56 @@
     display: none;
   }
 
+  .cWidgetContainer[data-widgetArea="header"] {
+    margin: 0;
+  }
+
+  .ipsWidget.ipsWidget_horizontal:not(.ipsWidgetHide) {
+    margin-top: 0;
+  }
+
   .ipsWidget_horizontal .mainBlock {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 12px;
     gap: 8px;
+  }
+
+  .ipsWidget_horizontal
+    .mainBlock
+    .ipsGrid_span4
+    .ipsWidget_inner
+    ul.ipsDataList
+    > *:nth-child(-n + 2) {
+    display: block;
+  }
+
+  .ipsWidget_horizontal
+    .mainBlock
+    .ipsGrid_span4
+    .ipsWidget_inner
+    ul.ipsDataList
+    > * {
+    display: none;
+  }
+
+  .ipsWidget_horizontal
+    .mainBlock
+    .ipsGrid_span3
+    .ipsWidget_inner
+    ul.ipsDataList
+    > *:nth-child(-n + 2) {
+    display: block;
+  }
+
+  .ipsWidget_horizontal
+    .mainBlock
+    .ipsGrid_span3
+    .ipsWidget_inner
+    ul.ipsDataList
+    > * {
+    display: none;
   }
 
   .ipsGrid_span5.mainvideoP {
@@ -136,6 +192,11 @@
 
   .ipsWidget_horizontal .mainBlock div img {
     width: 100% !important;
+  }
+
+  .ipsWidget_horizontal[data-blockid="app_cms_Blocks_4mm9rt8ex"] p {
+    display: flex;
+    overflow-x: auto;
   }
 
   .sectionArticles article {
@@ -211,20 +272,42 @@
     flex-direction: column;
   }
 
-  .ipsGrid_collapsePhone.contentGrid div {
+  .ipsGrid_collapsePhone.contentGrid > div:last-child {
+    display: none;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid > div {
     display: flex;
     flex-direction: column;
     width: 100% !important;
     margin: 0 !important;
   }
 
-  .ipsGrid_collapsePhone.contentGrid div span.topUsers {
+  .ipsGrid_collapsePhone.contentGrid > div {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   .ipsGrid_collapsePhone.contentGrid
-    div
+    > div.ipsGrid_span3
+    > .ipsWidget_inner
+    ul
+    > *:nth-child(-n + 2) {
+    display: block;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid
+    > div.ipsGrid_span3
+    > .ipsWidget_inner
+    ul
+    > * {
+    display: none;
+  }
+
+  .ipsGrid_collapsePhone.contentGrid
+    > div
     span.topUsers
     #elTopContributors_content
     .ipsDataItem {
@@ -233,7 +316,7 @@
   }
 
   .ipsGrid_collapsePhone.contentGrid
-    div
+    > div
     span.topUsers
     #elTopContributors_content
     .ipsDataItem
@@ -243,7 +326,7 @@
   }
 
   .ipsGrid_collapsePhone.contentGrid
-    div
+    > div
     span.topUsers
     #elTopContributors_content
     .ipsDataItem
@@ -381,6 +464,41 @@
     display: none;
   }
 
+  /* Forum Cat */
+
+  div[data-controller="forums.front.forum.forumPage"] > .ipsToolList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div[data-controller="forums.front.forum.forumPage"] > .ipsToolList > li {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  /* Forum Post */
+
+  .ipsPageHeader > .ipsPhotoPanel {
+    margin-top: 16px;
+  }
+
+  .ipsPageHeader > .ipsPhotoPanel > .ipsUserPhoto {
+    display: none;
+  }
+
+  .ipsPageHeader > .ipsPhotoPanel > div {
+    margin-left: 0 !important;
+  }
+
+  .ipsPageHeader > .ipsPhotoPanel > div > h1 {
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .ipsClearfix > .ipsToolList > .ipsToolList_primaryAction {
+    width: 100%;
+  }
+
   /* Editor */
   .ipsComposeArea_editor {
     margin: 0 !important;
@@ -447,13 +565,102 @@
     flex-direction: column;
   }
 
+  #elProfileStats {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    padding: inherit;
+    padding: 16px 0;
+    padding-top: 70px;
+  }
+
+  #elProfileStats > ul {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-left: 16px;
+  }
+
+  #elProfileStats > ul > li {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    border: none !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    background-color: #36383c;
+    border-radius: 3px;
+  }
+
+  /* Profile Edit */
+
+  #elSettingsTabs > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_wide {
+    display: flex;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_wide > .ipsSideMenu {
+    width: 100%;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #3e4048;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_wide > .ipsSideMenu > div > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_wide > .ipsSideMenu > div > ul > li {
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_fluid {
+    display: flex;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_fluid > section {
+    display: flex;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_fluid > section > div {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_fluid > section > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  #elSettingsTabs > div > .ipsColumn_fluid > section > div > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    width: 100%;
+  }
+
   /* iframe */
 
   iframe {
     max-width: 100%;
   }
 
-  /* mod page */
+  /* Mod Page */
 
   .modInfoGrid {
     display: flex;
@@ -642,5 +849,20 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+
+  /* Breadcrumb */
+
+  .ipsBreadcrumb > ul {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Comments */
+
+  div[data-controller="core.front.core.commentsWrapper"]
+    > .ipsTabs_panels.ipsTabs_contained {
+    border: none;
   }
 }
