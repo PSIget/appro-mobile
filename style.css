@@ -865,4 +865,25 @@
     > .ipsTabs_panels.ipsTabs_contained {
     border: none;
   }
+
+  /* Poll */
+
+  li[data-blockid^="app_forums_poll_"] .cPollList_choices > li .ipsGrid_span4 {
+    width: 100%;
+    margin-left: 0 !important;
+    text-align: left;
+  }
+
+  li[data-blockid^="app_forums_poll_"] .cPollList_choices > li .ipsGrid_span7 {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  li[data-blockid^="app_forums_poll_"] .cPollList_choices > li::after {
+    display: none;
+  }
+
+  li[data-blockid^="app_forums_poll_"] .cPollList_choices > li::before {
+    display: none;
+  }
 }
