@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Ap-Pro Mobile
 // @description Ap-Pro Mobile Version
-// @version     0.3
+// @version     0.4
 // @author      PSIget
 // @namespace   ap-pro.ru
 // @match       *://ap-pro.ru/*
