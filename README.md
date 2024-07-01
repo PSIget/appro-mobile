@@ -18,7 +18,7 @@
 
 1. Установите в ваш браузер менеджер пользовательских скриптов (например, [Violentmonkey](https://chromewebstore.google.com/detail/jinjaccalgkegednnccohejagnlnfdag))
    - Для Safari (iOS/iPad/macOS) рекомендую использовать [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)
-   - Для Android устройств рекомендую использовать браузер, который поддерживает расширешия для Chrome (например, [Яндекс Браузер](https://play.google.com/store/apps/details?id=com.yandex.browser&hl=ru))
+   - Для Android устройств рекомендую использовать браузер, который поддерживает расширения для Chrome (например, [Яндекс Браузер](https://play.google.com/store/apps/details?id=com.yandex.browser&hl=ru))
 2. Перейдите по ссылке для [скачивания скрипта](https://raw.githubusercontent.com/PSIget/appro-mobile/main/script.user.js)
 3. После установки скрипта обновите страницу сайта Ap-Pro
 
