@@ -886,4 +886,37 @@
   li[data-blockid^="app_forums_poll_"] .cPollList_choices > li::before {
     display: none;
   }
+
+  /* TopicFeed */
+
+  li[data-blockid^="app_forums_topicFeed_"]
+    .ipsDataList
+    > li
+    .ipsDataItem_main
+    > h4
+    .ipsPagination {
+    display: none;
+  }
+
+  li[data-blockid^="app_forums_topicFeed_"]
+    .ipsDataList
+    > li
+    .ipsDataItem_main
+    > .ipsClearfix {
+    display: none;
+  }
+
+  li[data-blockid^="app_forums_topicFeed_"]
+    .ipsDataList
+    > li
+    .ipsDataItem_stats {
+    display: none;
+  }
+
+  li[data-blockid^="app_forums_topicFeed_"]
+    .ipsDataList
+    > li
+    .ipsDataItem_lastPoster {
+    display: none;
+  }
 }
